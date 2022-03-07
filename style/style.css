@@ -1,13 +1,55 @@
-.wrap {
-    
-}
-
 body {
     margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrap {
+    width: 1140px;
+    outline: 1px solid red;
+    margin: 0 auto;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.profit-wrap {
+    display: flex;
+    justify-content: space-between;
 }
 
 .header {
     background-color: #222222;
     color: red;
+    padding: 19px 0;
+}
+
+.promo {
+    background-color: #F1E4E6;
+    padding: 15px 0;
+}
+
+.content {
+    background-color: #fff;
+    padding: 65px 0 95px 0;
+    flex-grow: 1;
+}
+
+.profit {
+    background-color: #222222;
+    color: red;
+    padding: 103px 0 104px 0;
+}
+
+.reviews {
+    padding: 97px 0 157px 0;
+}
+
+.footer {
+    background-color: #222222;
+    padding: 23px 0 23px 0;
 }
