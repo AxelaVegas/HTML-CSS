@@ -19,7 +19,7 @@ body {
 
 .profit-wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .header {
@@ -30,7 +30,20 @@ body {
 
 .promo {
     background-color: #F1E4E6;
-    padding: 15px 0;
+    padding: 15px 0 0 0;
+    color: #222222;
+
+    font-family: lato;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 48px;
+}
+
+.promo-wrap {
+    display: flex;
+    align-items: center;
+
 }
 
 .content {
@@ -52,4 +65,5 @@ body {
 .footer {
     background-color: #222222;
     padding: 23px 0 23px 0;
+    color: #fff;
 }
