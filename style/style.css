@@ -249,6 +249,10 @@ h3 {
     justify-content: center;
 }
 
+.subscribe-text-centr {
+    text-align: center;
+}
+
 .footer {
     background-color: #222224;
     padding: 23px 0 23px 0;
