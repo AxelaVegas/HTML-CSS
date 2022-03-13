@@ -122,17 +122,21 @@ h3 {
     text-align: center;
 }
 
-.offer-top {
+.offer {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-.offer-top-img {
+
+.offer-img {
     display: flex;
     align-items: center;
     justify-content: center;
     min-width: 360px;
     min-height: 260px;
+    background-color: #c4c4c4;
 }
 .offer-for-women {
     background-image: url(../img/offer-for-women.png);
@@ -143,15 +147,12 @@ h3 {
 .offer-for-kids {
     background-image: url(../img/offer-for-kids.png);
 }
-.offer-bot {
-    display: flex;
-    justify-content: center;
-}
-.offer-bot-img {
+
+.offer-acc {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 1140px;
+    min-width: 100%;
     min-height: 180px;
     background-image: url(../img/offer-ACCESORIES.png);
     background-repeat: no-repeat;
@@ -186,14 +187,9 @@ h3 {
 
 .prod-all-wrap {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 30px;
-}
-
-.prod-line {
-    display: flex;
-    gap: 30px;
-
 }
 
 .center {
