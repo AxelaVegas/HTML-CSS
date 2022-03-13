@@ -23,7 +23,12 @@ body {
 }
 
 h2 {
-
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
 }
 
 h3 {
@@ -85,11 +90,18 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    gap: 16px;
     min-height: 764px;
     
     background-image: url(../img/promo-img.png);
     background-repeat: no-repeat;
     background-position-x: -227px;
+}
+
+.rose-block {
+    background-color: #F16D7F;
+    height: 92px;
+    width: 12px;
 }
 
 .promo-text {
@@ -107,6 +119,7 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    text-align: center;
 }
 
 .offer-top {
@@ -164,7 +177,11 @@ h3 {
 }
 
 .prod-text-padding {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
     padding-left: 20px;
+    padding-top: 25px;
 }
 
 .prod-all-wrap {
@@ -221,6 +238,7 @@ h3 {
 .profit-wrap-text {
     display: flex;
     justify-content: space-around;
+    padding-top: 14px;
     
 }
 
@@ -231,15 +249,19 @@ h3 {
 .reviews {
     min-height: 448px;
     padding: 97px 0 157px 0;
+    background-color: #efefef;
     background-image: url(../img/bg-subscribe.jpg);
     background-repeat: no-repeat;
-    background-size: auto;
+    margin-bottom: -4px;
+    margin-left: -3px;
 }
 
 .rev-wrap {
+    display: flex;
     padding-right: 97px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .subscribe-centr {
@@ -247,14 +269,164 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 30px;
 }
 
 .subscribe-text-centr {
     text-align: center;
 }
 
+.subscribe-form {
+    display: flex;  /* удаляем зазор между полем input & button */
+    /* параметром gap можем задать нужный зазор */
+}
+
+.subscribe-form-input {
+    padding-left: 23px;
+    background-color: #E1E1E1;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    width: 256px;
+    height: 49px;
+}
+
+.subscribe-form-input::placeholder {
+    color: #222224;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.subscribe-form-button {
+    color: #FFFFFF;
+    background-color: #F16D7F;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    width: 100px;
+    height: 49px;
+}
+
 .footer {
     background-color: #222224;
     padding: 23px 0 23px 0;
     color: #fff;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* спаны */
+
+.promo-span-1 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+
+    color: #222222;
+}
+
+.promo-span-2 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    
+    color: #222222;
+}
+
+.promo-span-3 {
+    color: #F16D7F;
+}
+
+.offer-span-1 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+.offer-span-2 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #F16D7F;
+}
+
+.prod-span-1 {
+    color: #9F9F9F;
+    font-weight: 400;
+}
+
+.prod-span-2 {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.prod-span-3 {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+}
+
+.profit-span {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}
+
+.rev-span-1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+}
+
+.rev-span-2 {
+    font-style: italic;
+}
+
+.sub-span-1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: #222224;
+}
+
+.sub-span-2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.footer-span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
 }
