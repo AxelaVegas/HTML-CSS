@@ -314,6 +314,58 @@ h3 {
     align-items: center;
 }
 
+/* catalog style */
+
+.nav-menu {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.href-nav-menu-style {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+    text-decoration: none;
+}
+
+.href-active-nav-menu-style {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    text-decoration: none;
+}
+
+.h1-catalog {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.promo-catalog-wrap {
+    display: flex;
+    height: 148px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.promo-catalog {
+    height: 148px;
+    background-color: #F8F3F4;
+}
+
+.content-catalog {
+    background-color: #fff;
+    padding: 51px 0 188px 0;
+    flex-grow: 1;
+}
+
 /* спаны */
 
 .promo-span-1 {
