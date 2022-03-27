@@ -15,7 +15,7 @@ body {
 }
 
 /* визуально скрывает блок, но оставляет доступ для синтезатора речи */
-.hidden {                          
+.hidden {
     position: absolute;
     height: 1px;
     width: 1px;
@@ -41,7 +41,7 @@ h3 {
 
 .wrap {
     width: 1140px;
-   /*  outline: 1px solid red; */
+    /*  outline: 1px solid red; */
     margin: 0 auto;
 }
 
@@ -63,9 +63,29 @@ h3 {
     gap: 20px;
 }
 
-.header-search, .header-naw {
+.header-style-svg {
+    fill: #E8E8E8;
+}
+
+.header-style-svg:hover {
+    fill: #F16D7F;;
+}
+
+.filter-price,
+.filter-size,
+.filter-trending-now,
+.header-naw,
+.header-search {
     background-color: transparent;
     border: none;
+}
+
+.filter-style-svg {
+    fill: #6F6E6E;
+}
+
+.filter-style-svg:hover {
+    fill: #F16D7F;
 }
 
 .header {
@@ -76,7 +96,6 @@ h3 {
 
 .promo {
     background-color: #F1E4E6;
-    
 
     color: #222222;
     font-family: lato;
@@ -92,8 +111,8 @@ h3 {
     justify-content: flex-end;
     gap: 16px;
     min-height: 764px;
-    
-    background-image: url(../img/promo-img.png);
+
+    background-image: url("../img/promo-img.png");
     background-repeat: no-repeat;
     background-position-x: -227px;
 }
@@ -106,12 +125,12 @@ h3 {
 
 .promo-text {
     padding-right: 101px;
-    
+
 }
 
 .content {
     background-color: #fff;
-    padding: 65px 0 95px 0;
+    padding: 65px 0 95px;
     flex-grow: 1;
 }
 
@@ -138,14 +157,17 @@ h3 {
     min-height: 260px;
     background-color: #c4c4c4;
 }
+
 .offer-for-women {
-    background-image: url(../img/offer-for-women.png);
+    background-image: url("../img/offer-for-women.png");
 }
+
 .offer-for-men {
-    background-image: url(../img/offer-for-men.png);
+    background-image: url("../img/offer-for-men.png");
 }
+
 .offer-for-kids {
-    background-image: url(../img/offer-for-kids.png);
+    background-image: url("../img/offer-for-kids.png");
 }
 
 .offer-acc {
@@ -154,7 +176,7 @@ h3 {
     justify-content: center;
     min-width: 100%;
     min-height: 180px;
-    background-image: url(../img/offer-ACCESORIES.png);
+    background-image: url("../img/offer-ACCESORIES.png");
     background-repeat: no-repeat;
 }
 
@@ -197,6 +219,17 @@ h3 {
     justify-content: center;
 }
 
+.wom-jacket {
+    width: 360px;
+    height: 420px;
+    
+}
+
+.video-wom-jacket {
+    object-fit: cover;
+    height: 420px;
+}
+
 .button-catalog-wrap {
     margin-top: 48px;
     display: flex;
@@ -207,12 +240,21 @@ h3 {
     height: 48px;
 }
 
-.button-catalog-wrap > a {
-    padding: 15px 35px 15px 35px;
+.button-catalog-wrap:hover {
+    background-color: #F26376;
+}
+
+.button-catalog-wrap>a {
+    padding: 15px 35px;
+    text-decoration: none;
+}
+
+.button-catalog-wrap>a:hover {
+    color: white;
 }
 
 .href-button {
-    text-decoration: none;
+    /* text-decoration: none; */
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
@@ -220,10 +262,18 @@ h3 {
 
 .profit {
     background-color: #222224;
-    padding: 103px 0 104px 0;
+    padding: 103px 0 104px;
 
     text-align: center;
     color: #FBFBFB;
+}
+
+.profit-style-svg {
+    fill: #FF6A6A;
+}
+
+.profit-style-svg:hover {
+    fill: white;
 }
 
 .profit-wrap {
@@ -235,7 +285,7 @@ h3 {
     display: flex;
     justify-content: space-around;
     padding-top: 14px;
-    
+
 }
 
 .profit-p-pading {
@@ -244,10 +294,11 @@ h3 {
 
 .reviews {
     min-height: 448px;
-    padding: 97px 0 157px 0;
+    padding: 97px 0 157px;
     background-color: #efefef;
-    background-image: url(../img/bg-subscribe.jpg);
+    background-image: url("../img/bg-subscribe.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: -4px;
     margin-left: -3px;
 }
@@ -273,7 +324,8 @@ h3 {
 }
 
 .subscribe-form {
-    display: flex;  /* удаляем зазор между полем input & button */
+    display: flex;
+    /* удаляем зазор между полем input & button */
     /* параметром gap можем задать нужный зазор */
 }
 
@@ -304,7 +356,7 @@ h3 {
 
 .footer {
     background-color: #222224;
-    padding: 23px 0 23px 0;
+    padding: 23px 0;
     color: #fff;
 }
 
@@ -314,12 +366,84 @@ h3 {
     align-items: center;
 }
 
+.social-networks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    gap: 7px;
+}
+
+.social-networks a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+    height: 32px;
+    width: 32px;
+    background: #FFFFFF;
+    text-decoration: none;
+}
+
+.social-networks a:hover {
+    color: #ffffff;
+    background: #F16D7F;
+}
+
 /* catalog style */
+
+.breadcrumbs {
+    display: flex;
+    /* flex-direction: row; */
+    gap: 5px;
+    
+}
+
+.breadcrumbs-item {
+    list-style: none;
+}
+
+.breadcrumbs-item::before {
+    content: '/';
+    margin-right: 5px;
+}
+
+.breadcrumbs-item:first-child::before {
+    display: none;
+}
+
+.breadcrumbs-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.breadcrumbs-link:hover {
+    color: #F16D7F;
+    text-decoration: underline;
+}
+
+.breadcrumbs-link--current {
+    font-weight: bold;
+    color: #F16D7F;
+}
+
+.breadcrumbs-link--current:hover {
+    text-decoration: none;
+}
 
 .nav-menu {
     display: flex;
     gap: 10px;
-    
+
 }
 
 .href-nav-menu-style {
@@ -353,6 +477,7 @@ h3 {
     height: 148px;
     align-items: center;
     justify-content: space-between;
+    background-image: url(../img/bg-catalog.png);
 }
 
 .promo-catalog {
@@ -362,8 +487,20 @@ h3 {
 
 .content-catalog {
     background-color: #fff;
-    padding: 51px 0 188px 0;
+    padding: 51px 0 188px;
     flex-grow: 1;
+}
+
+.filter {
+    display: flex;
+    padding-bottom: 64px;
+    padding-left: 17px;
+}
+
+.filter-right-wrap {
+    display: flex;
+    gap: 30px;
+    padding-left: 304px;
 }
 
 /* спаны */
@@ -384,7 +521,7 @@ h3 {
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
-    
+
     color: #222222;
 }
 
@@ -399,7 +536,7 @@ h3 {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    
+
     color: #FFFFFF;
 }
 
