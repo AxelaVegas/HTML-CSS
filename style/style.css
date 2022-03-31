@@ -21,23 +21,11 @@ body {
 }
 
 /* визуально скрывает блок, но оставляет доступ для синтезатора речи */
-<<<<<<< HEAD
-.hidden {
-=======
-<<<<<<< Updated upstream
-.hidden {                          
->>>>>>> HW-2
-    position: absolute;
-    height: 1px;
-    width: 1px;
-    clip: rect(0px 0px 0px 0px);
-=======
 .hidden {
   position: absolute;
   height: 1px;
   width: 1px;
   clip: rect(0px 0px 0px 0px);
->>>>>>> Stashed changes
 }
 
 h2 {
@@ -58,15 +46,9 @@ h3 {
 }
 
 .wrap {
-<<<<<<< Updated upstream
-    width: 1140px;
-    /*  outline: 1px solid red; */
-    margin: 0 auto;
-=======
   width: 1140px;
   /*  outline: 1px solid red; */
   margin: 0 auto;
->>>>>>> Stashed changes
 }
 
 .header-wrap {
@@ -99,39 +81,6 @@ h3 {
   gap: 20px;
 }
 
-<<<<<<< HEAD
-.header-style-svg {
-    fill: #E8E8E8;
-}
-
-.header-style-svg:hover {
-    fill: #F16D7F;;
-}
-
-.filter-price,
-.filter-size,
-.filter-trending-now,
-.header-naw,
-.header-search {
-=======
-<<<<<<< Updated upstream
-.header-search, .header-naw {
->>>>>>> HW-2
-    background-color: transparent;
-    border: none;
-}
-
-<<<<<<< HEAD
-.filter-style-svg {
-    fill: #6F6E6E;
-}
-
-.filter-style-svg:hover {
-    fill: #F16D7F;
-}
-
-=======
-=======
 .header-style-svg {
   fill: #E8E8E8;
 }
@@ -157,8 +106,6 @@ h3 {
   fill: #F16D7F;
 }
 
->>>>>>> Stashed changes
->>>>>>> HW-2
 .header {
   background-color: #222224;
   color: red;
@@ -166,28 +113,6 @@ h3 {
 }
 
 .promo {
-<<<<<<< Updated upstream
-    background-color: #F1E4E6;
-
-    color: #222222;
-    font-family: lato;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 48px;
-}
-
-.promo-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 16px;
-    min-height: 764px;
-
-    background-image: url("../img/promo-img.png");
-    background-repeat: no-repeat;
-    background-position-x: -227px;
-=======
   background-color: #F1E4E6;
   color: #222222;
   font-family: lato;
@@ -212,7 +137,6 @@ h3 {
   background-image: url("../img/promo-img.png");
   background-repeat: no-repeat;
   background-position-x: -227px;
->>>>>>> Stashed changes
 }
 
 .rose-block {
@@ -222,16 +146,6 @@ h3 {
 }
 
 .promo-text {
-<<<<<<< Updated upstream
-    padding-right: 101px;
-
-}
-
-.content {
-    background-color: #fff;
-    padding: 65px 0 95px;
-    flex-grow: 1;
-=======
   padding-right: 101px;
 }
 
@@ -241,7 +155,6 @@ h3 {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
->>>>>>> Stashed changes
 }
 
 .offer {
@@ -288,47 +201,14 @@ h3 {
 }
 
 .offer-for-women {
-<<<<<<< HEAD
-    background-image: url("../img/offer-for-women.png");
-=======
-<<<<<<< Updated upstream
-    background-image: url(../img/offer-for-women.png);
-=======
   background-image: url("../img/offer-for-women.png");
->>>>>>> Stashed changes
->>>>>>> HW-2
 }
 
 .offer-for-men {
-<<<<<<< HEAD
-    background-image: url("../img/offer-for-men.png");
-=======
-<<<<<<< Updated upstream
-    background-image: url(../img/offer-for-men.png);
-=======
   background-image: url("../img/offer-for-men.png");
->>>>>>> Stashed changes
->>>>>>> HW-2
 }
 
 .offer-for-kids {
-<<<<<<< HEAD
-    background-image: url("../img/offer-for-kids.png");
-=======
-<<<<<<< Updated upstream
-    background-image: url(../img/offer-for-kids.png);
->>>>>>> HW-2
-}
-
-.offer-acc {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 100%;
-    min-height: 180px;
-    background-image: url("../img/offer-ACCESORIES.png");
-    background-repeat: no-repeat;
-=======
   background-image: url("../img/offer-for-kids.png");
 }
 
@@ -346,7 +226,6 @@ h3 {
   min-height: 180px;
   background-image: url("../img/offer-ACCESORIES.png");
   background-repeat: no-repeat;
->>>>>>> Stashed changes
 }
 
 .products {
@@ -410,33 +289,6 @@ h3 {
           justify-content: center;
 }
 
-<<<<<<< HEAD
-.wom-jacket {
-    width: 360px;
-    height: 420px;
-    
-}
-
-.video-wom-jacket {
-    object-fit: cover;
-    height: 420px;
-}
-
-.button-catalog-wrap {
-    margin-top: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline: #FF6A6A solid 1px;
-    width: 212px;
-    height: 48px;
-}
-
-.button-catalog-wrap:hover {
-    background-color: #F26376;
-=======
-<<<<<<< Updated upstream
-=======
 .wom-jacket {
   width: 360px;
   height: 420px;
@@ -448,7 +300,6 @@ h3 {
   height: 420px;
 }
 
->>>>>>> Stashed changes
 .button-catalog-wrap {
   margin-top: 48px;
   display: -webkit-box;
@@ -465,47 +316,6 @@ h3 {
   height: 48px;
 }
 
-<<<<<<< Updated upstream
-.button-catalog-wrap > a {
-    padding: 15px 35px 15px 35px;
->>>>>>> HW-2
-}
-
-.button-catalog-wrap>a {
-    padding: 15px 35px;
-    text-decoration: none;
-}
-
-.button-catalog-wrap>a:hover {
-    color: white;
-}
-
-.href-button {
-    /* text-decoration: none; */
-    font-size: 16px;
-    line-height: 19px;
-    color: #F26376;
-}
-
-.profit {
-    background-color: #222224;
-    padding: 103px 0 104px;
-
-    text-align: center;
-    color: #FBFBFB;
-}
-
-<<<<<<< HEAD
-.profit-style-svg {
-    fill: #FF6A6A;
-}
-
-.profit-style-svg:hover {
-    fill: white;
-}
-
-=======
-=======
 .button-catalog-wrap:hover {
   background-color: #F26376;
 }
@@ -541,8 +351,6 @@ h3 {
   fill: white;
 }
 
->>>>>>> Stashed changes
->>>>>>> HW-2
 .profit-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -552,23 +360,12 @@ h3 {
 }
 
 .profit-wrap-text {
-<<<<<<< Updated upstream
-    display: flex;
-    justify-content: space-around;
-    padding-top: 14px;
-<<<<<<< HEAD
-
-=======
-    
-=======
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-top: 14px;
->>>>>>> Stashed changes
->>>>>>> HW-2
 }
 
 .profit-p-pading {
@@ -576,16 +373,6 @@ h3 {
 }
 
 .reviews {
-<<<<<<< Updated upstream
-    min-height: 448px;
-    padding: 97px 0 157px;
-    background-color: #efefef;
-    background-image: url("../img/bg-subscribe.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: -4px;
-    margin-left: -3px;
-=======
   min-height: 448px;
   padding: 97px 0 157px;
   background-color: #efefef;
@@ -594,7 +381,6 @@ h3 {
   background-size: cover;
   margin-bottom: -4px;
   margin-left: -3px;
->>>>>>> Stashed changes
 }
 
 .rev-wrap {
@@ -633,21 +419,11 @@ h3 {
 }
 
 .subscribe-form {
-<<<<<<< HEAD
-    display: flex;
-    /* удаляем зазор между полем input & button */
-=======
-<<<<<<< Updated upstream
-    display: flex;  /* удаляем зазор между полем input & button */
->>>>>>> HW-2
-    /* параметром gap можем задать нужный зазор */
-=======
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   /* удаляем зазор между полем input & button */
   /* параметром gap можем задать нужный зазор */
->>>>>>> Stashed changes
 }
 
 .subscribe-form-input {
@@ -697,15 +473,9 @@ h3 {
 }
 
 .footer {
-<<<<<<< Updated upstream
-    background-color: #222224;
-    padding: 23px 0;
-    color: #fff;
-=======
   background-color: #222224;
   padding: 23px 0;
   color: #fff;
->>>>>>> Stashed changes
 }
 
 .footer-wrap {
@@ -720,8 +490,6 @@ h3 {
           align-items: center;
 }
 
-<<<<<<< Updated upstream
-=======
 .social-networks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -834,145 +602,6 @@ h3 {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-.social-networks {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-decoration: none;
-    list-style: none;
-    gap: 7px;
-}
-
-.social-networks a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 16px;
-    color: #000000;
-    height: 32px;
-    width: 32px;
-    background: #FFFFFF;
-    text-decoration: none;
-}
-
-.social-networks a:hover {
-    color: #ffffff;
-    background: #F16D7F;
-}
-
-/* catalog style */
-
-.breadcrumbs {
-    display: flex;
-    /* flex-direction: row; */
-    gap: 5px;
-    
-}
-
-.breadcrumbs-item {
-    list-style: none;
-}
-
-.breadcrumbs-item::before {
-    content: '/';
-    margin-right: 5px;
-}
-
-.breadcrumbs-item:first-child::before {
-    display: none;
-}
-
-.breadcrumbs-link {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #636363;
-}
-
-.breadcrumbs-link:hover {
-    color: #F16D7F;
-    text-decoration: underline;
-}
-
-.breadcrumbs-link--current {
-    font-weight: bold;
-    color: #F16D7F;
-}
-
-.breadcrumbs-link--current:hover {
-    text-decoration: none;
-}
-
-.nav-menu {
-    display: flex;
-    gap: 10px;
-
-}
-
-.href-nav-menu-style {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #636363;
-    text-decoration: none;
-}
-
-.href-active-nav-menu-style {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    color: #F16D7F;
-    text-decoration: none;
-}
-
-.h1-catalog {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    color: #F16D7F;
-}
-
-.promo-catalog-wrap {
-    display: flex;
-    height: 148px;
-    align-items: center;
-    justify-content: space-between;
-    background-image: url(../img/bg-catalog.png);
-}
-
-.promo-catalog {
-    height: 148px;
-    background-color: #F8F3F4;
-}
-
-.content-catalog {
-    background-color: #fff;
-    padding: 51px 0 188px;
-    flex-grow: 1;
-}
-
-.filter {
-    display: flex;
-    padding-bottom: 64px;
-    padding-left: 17px;
-}
-
-.filter-right-wrap {
-    display: flex;
-    gap: 30px;
-    padding-left: 304px;
-}
-
-=======
 .h1-catalog {
   font-style: normal;
   font-weight: 400;
@@ -992,7 +621,6 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-image: url(../img/bg-catalog.png);
 }
 
 .promo-catalog {
@@ -1086,8 +714,6 @@ h3 {
   color: #EF5B70;
 }
 
->>>>>>> Stashed changes
->>>>>>> HW-2
 /* спаны */
 .uppercase {
   text-transform: uppercase;
@@ -1104,16 +730,6 @@ h3 {
   line-height: 17px;
 }
 
-<<<<<<< Updated upstream
-.promo-span-2 {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
-
-    color: #222222;
-=======
 .active-product-font-2 {
   font-style: normal;
   font-weight: 300;
@@ -1148,7 +764,6 @@ h3 {
   font-size: 32px;
   line-height: 38px;
   color: #222222;
->>>>>>> Stashed changes
 }
 
 .promo-span-3 {
@@ -1156,16 +771,6 @@ h3 {
 }
 
 .offer-span-1 {
-<<<<<<< Updated upstream
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-
-    color: #FFFFFF;
-=======
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
@@ -1173,7 +778,6 @@ h3 {
   line-height: 19px;
   text-align: center;
   color: #FFFFFF;
->>>>>>> Stashed changes
 }
 
 .offer-span-2 {
