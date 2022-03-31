@@ -1,4 +1,9 @@
 $rose-color: #F16D7F;
+$overlay: 64px;
+@mixin flex-just-center {
+    display: flex;
+    justify-content: center;
+}
 
 
 * {
@@ -153,9 +158,10 @@ h3 {
 }
 
 .offer-img {
-    display: flex;
+    @include flex-just-center();
+    /* display: flex; */
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     min-width: 360px;
     min-height: 260px;
     background-color: #c4c4c4;
@@ -174,9 +180,10 @@ h3 {
 }
 
 .offer-acc {
-    display: flex;
+    @include flex-just-center();
+    /* display: flex; */
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     min-width: 100%;
     min-height: 180px;
     background-image: url("../img/offer-ACCESORIES.png");
@@ -218,8 +225,9 @@ h3 {
 }
 
 .center {
-    display: flex;
-    justify-content: center;
+    @include flex-just-center();
+/*     display: flex;
+    justify-content: center; */
 }
 
 .wom-jacket {
@@ -235,8 +243,9 @@ h3 {
 
 .button-catalog-wrap {
     margin-top: 48px;
-    display: flex;
-    justify-content: center;
+    @include flex-just-center();
+/*     display: flex;
+    justify-content: center; */
     align-items: center;
     outline: #FF6A6A solid 1px;
     width: 212px;
@@ -341,6 +350,11 @@ h3 {
     height: 49px;
 }
 
+.subscribe-form-input:hover {
+    background-color: white;
+    outline: solid 2px #E1E1E1;
+}
+
 .subscribe-form-input::placeholder {
     color: #222224;
     font-weight: 400;
@@ -355,6 +369,12 @@ h3 {
     border-radius: 0 25px 25px 0;
     width: 100px;
     height: 49px;
+}
+
+.subscribe-form-button:hover {
+    color: $rose-color;
+    background-color: #FFFFFF;
+    outline: solid 2px $rose-color;
 }
 
 .footer {
@@ -512,19 +532,21 @@ h3 {
 }
 
 .slider-active-prodact {
+    display: flex;
+    justify-content: center;
     background-color: #F7F7F7;
     min-height: 777px;
-    background-image: url(/img/bg-img-product.jpg);
+   /*  background-image: url(/img/bg-img-product.jpg); */
     background-repeat: no-repeat;
     background-position: center;
     border: 1px solid #EAEAEA;
-
+    padding-bottom: $overlay;
 }
 
 .description-active-prodact {
     min-height: 601px;
     border: 1px solid #EAEAEA;
-    margin-top: -64px;
+    margin-top: -$overlay;
     background-color: white;
     margin-bottom: 80px;
     padding-top: 52px;
