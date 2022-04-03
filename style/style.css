@@ -30,8 +30,12 @@ body {
 
 /* класс временной задержкт */
 .transition-easy {
-  -webkit-transition: 300ms;
-  transition: 300ms;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
   cursor: pointer;
 }
 
@@ -313,42 +317,63 @@ h3 {
   height: 420px;
 }
 
-.button-catalog-wrap {
+.btn {
+  cursor: pointer;
   margin-top: 48px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  /*     display: flex;
-    justify-content: center; */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  outline: #FF6A6A solid 1px;
-  width: 212px;
-  height: 48px;
-}
-
-.button-catalog-wrap:hover {
-  background-color: #F26376;
-}
-
-.button-catalog-wrap > a {
-  padding: 15px 35px;
+  margin-left: calc(calc(50%) - 96px);
+  display: inline-block;
+  color: #F16D7F;
   text-decoration: none;
+  border-radius: 0px;
+  outline: 1px solid black;
 }
 
-.button-catalog-wrap > a:hover {
+.btn:hover span {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
   color: white;
+  background-color: #F16D7F;
 }
 
-.href-button {
-  /* text-decoration: none; */
-  font-size: 16px;
-  line-height: 19px;
-  color: #F26376;
+.btn span {
+  display: block;
+  background-color: white;
+  outline: #F16D7F 1px solid;
+  padding: 10px 20px;
+  -webkit-transition: background-color 300ms, color 300ms, -webkit-transform 300ms;
+  transition: background-color 300ms, color 300ms, -webkit-transform 300ms;
+  transition: transform 300ms, background-color 300ms, color 300ms;
+  transition: transform 300ms, background-color 300ms, color 300ms, -webkit-transform 300ms;
+}
+
+.scale-up-center {
+  width: 50px;
+  height: 50px;
+  background-color: 222224;
+  -webkit-animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate both;
+  animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
 }
 
 .profit {
@@ -443,7 +468,7 @@ h3 {
 .subscribe-form-input {
   padding-left: 23px;
   background-color: #E1E1E1;
-  border: none;
+  border-style: none;
   border-radius: 25px 0 0 25px;
   width: 256px;
   height: 49px;
@@ -578,7 +603,9 @@ h3 {
 }
 
 .breadcrumbs-link {
-  text-decoration: none;
+  /* text-decoration: none; */
+  -webkit-text-decoration: underline solid transparent;
+          text-decoration: underline solid transparent;
   text-transform: uppercase;
   font-family: 'Lato';
   font-style: normal;
@@ -678,6 +705,9 @@ h3 {
 }
 
 /* prodact style */
+/* .active-product {
+    
+} */
 .slider-active-prodact {
   display: -webkit-box;
   display: -ms-flexbox;

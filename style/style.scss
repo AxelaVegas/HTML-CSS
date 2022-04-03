@@ -33,7 +33,9 @@ body {
 
 /* класс временной задержкт */
 .transition-easy {
-    transition: $trans-time;
+    transition-property: all;
+    transition-duration: $trans-time;
+    transition-timing-function: ease-in;
     cursor: pointer;
 }
 
@@ -80,10 +82,11 @@ h3 {
 
 .header-style-svg {
     fill: #E8E8E8;
-}
 
-.header-style-svg:hover {
+
+    &:hover {
     fill: #F16D7F;;
+    }
 }
 
 .filter-price,
@@ -98,10 +101,10 @@ h3 {
 
 .filter-style-svg {
     fill: #6F6E6E;
-}
 
-.filter-style-svg:hover {
-    fill: $rose-color;
+    &:hover {
+        fill: $rose-color;
+    }
 }
 
 .header {
@@ -249,36 +252,59 @@ h3 {
     height: 420px;
 }
 
-.button-catalog-wrap {
+.btn {
+    cursor: pointer;
     margin-top: 48px;
-    @include flex-just-center();
-/*     display: flex;
-    justify-content: center; */
-    align-items: center;
-    outline: #FF6A6A solid 1px;
-    width: 212px;
-    height: 48px;
-}
-
-.button-catalog-wrap:hover {
-    background-color: #F26376;
-}
-
-.button-catalog-wrap>a {
-    padding: 15px 35px;
+    margin-left: calc(calc(50%) - 96px);
+    display: inline-block;
+    color: $rose-color;
     text-decoration: none;
+    border-radius: 0px;
+    outline: 1px solid black;
+    &:hover span{
+        transform: rotate(360deg);
+        color: white;
+        background-color: $rose-color;
+    }
 }
 
-.button-catalog-wrap>a:hover {
-    color: white;
+.btn span {
+    
+    display: block;
+    background-color: white;
+    outline: $rose-color 1px solid;
+    padding: 10px 20px;
+    transition: transform 300ms, background-color 300ms, color 300ms;
+
 }
 
-.href-button {
-    /* text-decoration: none; */
-    font-size: 16px;
-    line-height: 19px;
-    color: #F26376;
+.scale-up-center {
+    width: 50px;
+    height: 50px;
+    background-color: 222224;
+	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
 }
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5);
+    }
+  }
 
 .profit {
     background-color: #222224;
@@ -352,22 +378,22 @@ h3 {
 .subscribe-form-input {
     padding-left: 23px;
     background-color: #E1E1E1;
-    border: none;
+    border-style: none;
     border-radius: 25px 0 0 25px;
     width: 256px;
     height: 49px;
-}
+    
+    &:hover {
+        background-color: white;
+        outline: solid 2px #E1E1E1;
+    }
 
-.subscribe-form-input:hover {
-    background-color: white;
-    outline: solid 2px #E1E1E1;
-}
-
-.subscribe-form-input::placeholder {
-    color: #222224;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    &::placeholder {
+        color: #222224;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
 
 .subscribe-form-button {
@@ -377,12 +403,12 @@ h3 {
     border-radius: 0 25px 25px 0;
     width: 100px;
     height: 49px;
-}
-
-.subscribe-form-button:hover {
-    color: $rose-color;
-    background-color: #FFFFFF;
-    outline: solid 2px $rose-color;
+    
+    &:hover {
+        color: $rose-color;
+        background-color: #FFFFFF;
+        outline: solid 2px $rose-color;
+    }
 }
 
 .footer {
@@ -435,19 +461,20 @@ h3 {
 
 .breadcrumbs-item {
     list-style: none;
-}
 
-.breadcrumbs-item::before {
-    content: '/';
-    margin-right: 5px;
-}
+    &::before {
+        content: '/';
+        margin-right: 5px;
+    }
 
-.breadcrumbs-item:first-child::before {
-    display: none;
+    &:first-child::before {
+        display: none;
+    }
 }
 
 .breadcrumbs-link {
-    text-decoration: none;
+    /* text-decoration: none; */
+    text-decoration: underline solid transparent;
     text-transform: uppercase;
     font-family: 'Lato';
     font-style: normal;
@@ -455,11 +482,11 @@ h3 {
     font-size: 14px;
     line-height: 17px;
     color: #636363;
-}
 
-.breadcrumbs-link:hover {
-    color: #F16D7F;
-    text-decoration: underline;
+    &:hover {
+        color: #F16D7F;
+        text-decoration: underline;
+    }
 }
 
 .breadcrumbs-link--current {
@@ -535,9 +562,9 @@ h3 {
 
 
 /* prodact style */
-.active-product {
+/* .active-product {
     
-}
+} */
 
 .slider-active-prodact {
     display: flex;
