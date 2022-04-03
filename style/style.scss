@@ -1,5 +1,6 @@
 $rose-color: #F16D7F;
 $overlay: 64px;
+$trans-time: 300ms;
 @mixin flex-just-center {
     display: flex;
     justify-content: center;
@@ -28,6 +29,12 @@ body {
     height: 1px;
     width: 1px;
     clip: rect(0px 0px 0px 0px);
+}
+
+/* класс временной задержкт */
+.transition-easy {
+    transition: $trans-time;
+    cursor: pointer;
 }
 
 h2 {
@@ -86,6 +93,7 @@ h3 {
 .header-search {
     background-color: transparent;
     border: none;
+    
 }
 
 .filter-style-svg {
@@ -284,9 +292,9 @@ h3 {
     fill: #FF6A6A;
 }
 
-.profit-style-svg:hover {
+/* .profit-style-svg:hover {
     fill: white;
-}
+} */
 
 .profit-wrap {
     display: flex;

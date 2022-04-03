@@ -28,6 +28,13 @@ body {
   clip: rect(0px 0px 0px 0px);
 }
 
+/* класс временной задержкт */
+.transition-easy {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  cursor: pointer;
+}
+
 h2 {
   font-family: 'Lato';
   font-style: normal;
@@ -355,10 +362,9 @@ h3 {
   fill: #FF6A6A;
 }
 
-.profit-style-svg:hover {
-  fill: white;
-}
-
+/* .profit-style-svg:hover {
+    fill: white;
+} */
 .profit-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
