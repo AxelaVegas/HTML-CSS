@@ -418,7 +418,7 @@ h3 {
 
 .reviews {
     min-height: 448px;
-    padding: 97px 0 157px;
+    padding: 97px 0 157px 0;
     background-color: #efefef;
     background-image: url("../img/bg-subscribe.jpg");
     background-repeat: no-repeat;
@@ -623,7 +623,7 @@ h3 {
 
 .content-catalog {
     background-color: #fff;
-    padding: 51px 0 188px;
+    padding: 51px 0 128px;
     flex-grow: 1;
 }
 
@@ -1018,14 +1018,11 @@ h3 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 50px;
     }
     
-    .profit-wrap-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-top: 14px;
-    
+    .profit-items-wrap {
+        gap: 15px;
     }
 
     .profit {
@@ -1064,6 +1061,18 @@ h3 {
         justify-content: center;
         align-items: center;
         gap: 50px;
+    }
+
+    .prod-wrap-9, .prod-wrap-3 {
+        display: none;
+    }
+
+    .slider-active-prodact {
+        padding-bottom: 0;
+    }
+    
+    .description-active-prodact {
+        margin-top: 0;
     }
 
 }
