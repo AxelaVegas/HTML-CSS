@@ -171,12 +171,6 @@ h3 {
 
 .promo {
   background-color: #F1E4E6;
-  color: #222222;
-  font-family: lato;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 48px;
 }
 
 .promo-wrap {
@@ -466,7 +460,6 @@ h3 {
 .profit {
   background-color: #222224;
   padding: 103px 0 104px;
-  text-align: center;
   color: #FBFBFB;
 }
 
@@ -485,15 +478,30 @@ h3 {
       justify-content: space-around;
 }
 
-.profit-wrap-text {
+.profit-items-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-top: 14px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  text-align: center;
 }
 
+/* .profit-wrap-text {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 14px;
+
+} */
 .profit-p-pading {
   padding-top: 14px;
 }
@@ -538,6 +546,7 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
+  text-align: center;
 }
 
 .subscribe-text-centr {
@@ -1162,5 +1171,93 @@ h3 {
   font-size: 16px;
   line-height: 19px;
   color: #FBFBFB;
+}
+
+@media (max-width: 1200px) {
+  .wrap {
+    width: 737px;
+    outline: 1px solid green;
+  }
+  .offer-img {
+    min-width: 232px;
+    min-height: 167px;
+    background-color: #c4c4c4;
+  }
+  .offer-acc {
+    min-height: 116px;
+    min-width: 100%;
+  }
+  .offer {
+    gap: 20px;
+  }
+  .prod-all-wrap {
+    gap: 16px;
+  }
+  .profit-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .profit-wrap-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 14px;
+  }
+  .profit {
+    background-color: #222224;
+    padding: 48px 0 68px;
+    color: #FBFBFB;
+  }
+  .profit-p-pading {
+    padding-top: 14px;
+  }
+  .promo-span-1 {
+    font-size: 44px;
+    line-height: 53px;
+  }
+  .promo-span-2 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .promo-text {
+    padding-right: 33px;
+  }
+  .promo-wrap {
+    min-height: 368px;
+    background-size: contain;
+    background-position-x: 0px;
+  }
+  .rev-wrap {
+    padding-right: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
